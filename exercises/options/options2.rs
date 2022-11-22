@@ -4,7 +4,8 @@
 
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use std::option;
+
 
     #[test]
     fn simple_option() {
@@ -12,7 +13,7 @@ mod tests {
         let optional_target = Some(target);
 
         // TODO: Make this an if let statement whose value is "Some" type
-        if let Some(word) = optional_word {
+        if let Some(word) = optional_target {
             assert_eq!(word, target);
         }
     }
